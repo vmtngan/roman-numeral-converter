@@ -1,0 +1,123 @@
+:root {
+  --gray-00: #ffffff;
+  --gray-05: #f5f6f7;
+  --gray-15: #d0d0d5;
+  --gray-75: #3b3b4f;
+  --gray-85: #1b1b32;
+  --gray-90: #0a0a23;
+  --blue-50: #198eee;
+  --error: #a94442;
+  --danger-color: #850000;
+  --danger-background: #ffadad;
+}
+
+@font-face {
+  font-family: 'Castoro Titling';
+  src: url(https://fonts.gstatic.com/s/castorotitling/v8/buEupouwccj03leTfjUAhEZWlrNaZQ0lWIxBMg.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  background-color: var(--gray-85);
+  color: var(--gray-05);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+main {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Castoro Titling', serif;
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.form {
+  background-color: var(--gray-75);
+  color: var(--gray-05);
+  border: 3px solid var(--gray-05);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form input {
+  background-color: var(--gray-90);
+  color: var(--gray-00);
+  border: 1px solid var(--gray-05);
+  font-size: 2.5rem;
+  width: 90%;
+  height: 60px;
+  padding: 6px 12px;
+  margin: 10px 0;
+}
+
+.form input:focus {
+  outline: 3px solid var(--blue-50);
+}
+
+.form button {
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+  font-size: 23px;
+  width: 90%;
+  padding: 10px 16px;
+  margin-top: 15px;
+}
+
+.output {
+  background-color: var(--gray-75);
+  color: var(--gray-00);
+  border: 3px solid var(--gray-05);
+  width: 500px;
+  font-size: 2.5rem;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.alert {
+  background-color: var(--danger-background);
+  color: var(--danger-color);
+  border: 3px solid var(--danger-color);
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
